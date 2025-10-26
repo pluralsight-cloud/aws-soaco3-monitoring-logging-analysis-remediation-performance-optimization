@@ -21,6 +21,6 @@ Monitor /var/log/messages
 5. Start the CloudWatch Agent
 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
 
-7. Generate some activity on our system by installing and running stress:
+6. Generate some activity on our system by installing and running stress:
 dnf install stress -y
 stress --cpu 1
