@@ -1,0 +1,5 @@
+1) Max out the CPU using the following command:
+for i in 1 2 3 4; do while : ; do : ; done & done
+
+2) Cause the instance status check to fail by downing the network interface using this command:
+sudo ifconfig ens5 down
