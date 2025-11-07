@@ -1,18 +1,9 @@
-{
-    "source": [
-        "ecommerce.orders"
-    ],
-    "detail-type": [
-        "Order Placed"
-    ],
-    "detail": {
-        "amount": [
-            {
-                "numeric": [
-                    "<",
-                    500
-                ]
-            }
-        ]
-    }
-}
+   {
+     "source": ["ecommerce.orders"],
+     "detail-type": ["Order Placed"],
+     "detail": {
+       "amount": [{
+         "numeric": ["<", 500]
+       }]
+     }
+   }
