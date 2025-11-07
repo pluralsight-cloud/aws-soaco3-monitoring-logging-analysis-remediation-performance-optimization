@@ -2,6 +2,6 @@ def lambda_handler(event, context):
     print("This is a standard order which will receive Standard processing")
     print(f"Order details: {event}")
     return {
-        "statusCode": 200,
-        "body": "Standard processing initiated for regular order",
-    }
+       'statusCode': 200,
+       'body': 'Standard processing initiated for regular order'
+     }
