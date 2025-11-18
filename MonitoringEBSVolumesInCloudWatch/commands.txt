@@ -1,0 +1,8 @@
+1. Use this command to generate some write operations:
+dd if=/dev/zero of=~/testfile bs=1M count=100
+
+2. Use this command to generate some read operations:
+dd if=~/testfile of=/dev/null bs=1M
+
+3. Use this command to generate continuous write activity, leaving the command to run in the cloudshell:
+while true; do dd if=/dev/zero of=~/testfile bs=1M count=50 conv=fdatasync; sleep 2; done
